@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="notas.js"></script>
+    <script src="../utilitarios.js"></script>
+    <link href="notas.css" rel="stylesheet"/>
+</head>
+
+<body onload="mostrarEstudiantes();">
+    <div class="logoEscuela">
+        <img src="./imagenes/logoKrakeDev.png" width="60%" />
+    </div>
+
+    <div id="divEstudiantes">
+            <div class="area">
+                <div class="ingresoDatos">
+                    <div class="tituloCampo">
+                        NOMBRE
+                    </div>
+                    <div>
+                        <input type="text" class="cajaTexto" id="txtNombre"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area">
+                <div class="ingresoDatos">
+                    <div class="tituloCampo">
+                        APELLIDO
+                    </div>
+                    <div>
+                        <input type="text" class="cajaTexto" id="txtApellido" />
+                    </div>
+                </div>
+            </div>
+            <div class="area">
+                <div class="ingresoDatos">
+                    <div class="tituloCampo">
+                        NOTA 1
+                    </div>
+                    <div>
+                        <input type="text" class="cajaTexto" id="txtNota1"/>
+                    </div>
+                </div>
+            </div>
+            <div class="area">
+                    <div class="ingresoDatos">
+                        <div class="tituloCampo">
+                            NOTA 2
+                        </div>
+                        <div>
+                            <input type="text" class="cajaTexto" id="txtNota2"/>
+                        </div>
+                    </div>
+            </div>
+            <div class="area">
+                    <div class="ingresoDatos">
+                        <div class="tituloCampo">
+                            NOTA 3
+                        </div>
+                        <div>
+                            <input type="text" class="cajaTexto" id="txtNota3"/>
+                        </div>
+                    </div>
+            </div>
+            <div class="resultado">
+                <h3 id="lblResultadoTotal"></h3>
+            </div>
+            <div class="resultado">
+                <h3 id="lblResultadoPromedio"></h3>
+            </div>           
+                
+                <div class="botones">
+
+                    <div class="contenedorBoton">
+                        <input type="button" value="CALCULAR" class="estiloBoton" id="btnCalcular" onclick="calcular();" />
+                    </div>
+                </div>
+                <div class="botones">
+
+                    <div class="contenedorBoton">
+                        <input type="button" value="GUARDAR" class="estiloBoton" id="btnGuardar" onclick="guardar();" />
+                    </div>
+                </div>
+                <div id="tablaEstudiantes" class="areaTabla">
+                </div>   
+        <div class="autor">
+            <h5>Jose Valdez</h5>
+        </div>     
+    </div>
+   
+</body>
+
+</html>
