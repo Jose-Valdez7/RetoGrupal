@@ -37,6 +37,8 @@ guardar=function(){
     promedioRecuperado=calcularPromedio(nota1,nota2,nota3);
     let promedioFloat = promedioRecuperado.toFixed(2);
     let estudiante={}
+
+    if( isNaN(valorNombre) || valorNombre!=""){
     estudiante.nombre=valorNombre;
     estudiante.apellido=valorApellido;
     estudiante.nota1=nota1;
@@ -60,6 +62,9 @@ guardar=function(){
 
 
     deshabilitarComponente("btnGuardar");
+}else{
+    mostrarTexto("lblErrorNombre","ingresar datos")
+}
 
 }
 mostarTabla=function(){
