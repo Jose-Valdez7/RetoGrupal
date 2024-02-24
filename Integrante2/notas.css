@@ -2,12 +2,18 @@ body{
     background-size: cover;
   margin-left: 0px;
   margin-right: 0px;
+  
 }
 .area{
   display: flex;
   flex:1;
   flex-direction: column;
   
+}
+.menu{
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+
 }
 .menu{
   display: flex;
