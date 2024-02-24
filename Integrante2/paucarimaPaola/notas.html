@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="notas.js"></script>
+    <script src="../utilitarios.js"></script>
+    <link href="notas.css" rel="stylesheet" />
+</head>
+
+<body onload="mostrarEstudiante();">
+
+
+    <div id="divEmpleado">
+        <div class="principal">
+
+
+            <div class="area">
+                <div class="ingresoDatos">
+                    <div class="tituloCampo">
+                        Nombre
+                    </div>
+                    <div>
+                        <input type="text" class="cajaTexto" id="txtNombre" />
+                        <div class="error" id="lblErrorNombre"></div>
+                    </div>
+                </div>
+                <div class="ingresoDatos">
+                    <div class="tituloCampo">
+                        Apellido
+                    </div>
+                    <div>
+                        <input type="text" class="cajaTexto" id="txtApellido" />
+                        <div class="error" id="lblErrorApellido"></div>
+                    </div>
+                </div>
+                <div class="ingresoDatos">
+                    <div class="tituloCampo">
+                        Nota1
+                    </div>
+                    <div>
+                        <input type="text" class="cajaTexto" id="txtNota1" />
+                        <div class="error" id="lblErrorNota1"></div>
+                    </div>
+                </div>
+                <div class="ingresoDatos">
+                    <div class="tituloCampo">
+                        Nota2
+                    </div>
+                    <div>
+                        <input type="text" class="cajaTexto" id="txtNota2" />
+                        <div class="error" id="lblErrorNota2"></div>
+                    </div>
+                </div>
+                <div class="ingresoDatos">
+                    <div class="tituloCampo">
+                        Nota3
+                    </div>
+                    <div>
+                        <input type="text" class="cajaTexto" id="txtNota3" />
+                        <div class="error" id="lblErrorNota3"></div>
+                    </div>
+                </div>
+                <div class="botones">
+                    <div class="contenedorBoton">
+                        <input type="button" value="CALCULAR" class="estiloBoton" onclick="calcular();" />
+                    </div>
+                    <div class="contenedorBoton">
+                        <input type="button" value="GUARDAR" id="btnGuardar" class="estiloBoton" onclick="guardar();" />
+                    </div>
+                 
+
+                </div>
+                <div id="lblMensaje">
+
+                </div>
+                <div id="lblMensajePromedio">
+
+                </div>
+                <div id="tablaNotas" class="areaTabla">
+
+                </div>
+            </div>
+            <div class="logoEscuela">
+                <img src="./imagenes/empleado.png" width="30%" />
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <p>© Todos los reservados por Paola Paucarima</a></p>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>
