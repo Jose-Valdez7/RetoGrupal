@@ -40,7 +40,7 @@ guardar=function(){
         }
     let n2=recuperarFloat("txtNota2");
         if(n2<0 || n2>10){
-            mostrarTexto("lblErrorNota2","Nota 3 debe estar entre 0 y 10");
+            mostrarTexto("lblErrorNota2","Nota 2 debe estar entre 0 y 10");
             let nota2=false;
             return nota2;
         }else {
