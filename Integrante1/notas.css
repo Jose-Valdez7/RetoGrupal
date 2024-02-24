@@ -168,3 +168,9 @@ tbody tr:nth-child(odd) {
     justify-content: right;
 
 }
+
+.error{
+    color:red;
+    font-style: italic;
+    font-size: 16px;
+}

@@ -31,12 +31,34 @@ guardar=function(){
     let nombre=recuperarTexto("txtNombre");
     let apellido=recuperarTexto("txtApellido");
     let n1=recuperarFloat("txtNota1");
+        if(n1<0 || n1>10){
+            mostrarTexto("lblErrorNota1","Nota 1 debe estar entre 0 y 10");
+            let nota1=false;
+            return nota1;
+        }else {
+            mostrarTexto("lblErrorNota1","");
+        }
     let n2=recuperarFloat("txtNota2");
+        if(n2<0 || n2>10){
+            mostrarTexto("lblErrorNota2","Nota 3 debe estar entre 0 y 10");
+            let nota2=false;
+            return nota2;
+        }else {
+            mostrarTexto("lblErrorNota2","");
+        }
     let n3=recuperarFloat("txtNota3");
+        if(n3<0 || n3>10){
+            mostrarTexto("lblErrorNota3","Nota 3 debe estar entre 0 y 10");
+            let nota3=false;
+            return nota3;
+        }else {
+            mostrarTexto("lblErrorNota3","");
+        }
     let total=calcularTotal(n1,n2,n3);
     let promedio=calcularPromedio(n1,n2,n3);
     let promedioRedondeado=promedio.toFixed(2);
     let estudiante={};
+    if(nota1!=false && nota2!=false &&nota3!=false){
     estudiante.nombre=nombre;
     estudiante.apellido=apellido;
     estudiante.nota1=n1;
@@ -45,6 +67,7 @@ guardar=function(){
     estudiante.total=total;
     estudiante.promedio=promedioRedondeado;
     estudiantes.push(estudiante);
+    }
     alert("Notas Guardadas con Exito");
     mostrarEstudiantes();
     mostrarTextoEnCaja("txtNombre","");
@@ -79,3 +102,4 @@ mostrarEstudiantes=function(){
     cmpTabla.innerHTML=contenidoTabla;
     deshabilitarComponente("btnGuardar");
 }
+

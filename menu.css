@@ -131,11 +131,7 @@ body{
     align-items: center;
     margin: 20px;
 }
-.error{
-    color:red;
-    font-style: italic;
-    font-size: 16px;
-}
+
 
 .contenido{
     display: flex;
