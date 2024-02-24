@@ -64,7 +64,7 @@ guardar=function () {
     let valorTotal=calcularTotal(valorNota1,valorNota2,valorNota3);
     let valorPromedio=calcularPromedio(valorNota1,valorNota2,valorNota3);
 
-    if (valorNombre!=""&& valorApellido!="" && !isNaN(valorNota1) && !isNaN(valorNota2) && !isNaN(valorNota3)) {
+    if (valorApellido!="" || isNaN(valorApellido)) {
         let nuevoEstudiante = {};
         nuevoEstudiante.nombre = valorNombre;
         nuevoEstudiante.apellido = valorApellido;
@@ -80,6 +80,7 @@ guardar=function () {
         limpiar();
     }else{
         alert("DATOS INCORRECTAMENTE ");
+        mostrarTexto("lblErrorApellido","Campo obligatorio");
 
     }
 
