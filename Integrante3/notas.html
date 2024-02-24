@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="notas.js"></script>
+    <script src="../utilitarios.js"></script>
+    <link rel="stylesheet" href="notas.css">
+</head>
+<body onload="mostarTabla();" >
+    <div class="datos">
+        <div>
+            <input type="image" src="logo.png" width="50px">
+            <div>
+                <h3 id="INgresar">Ingresar el nombre</h3>
+            </div>
+            <div>
+                <input type="text" name="" id="txtNombre">
+                <h3 id="error" class="error"></h3>
+            </div>
+            
+            <div>
+                <h3 id="INgresar">Ingresar el apellido</h3>
+            </div>
+            <div>
+                <input class=".cajaTexto" type="text" name="" id="txtApellido">
+                <h3 id="error" class="error"></h3>
+            </div>
+            
+            <div>
+                <h3 id="INgresar">Ingresar el nota1</h3>
+            </div>
+            <div>
+                <input type="text" name="" id="txtNota1">
+                <h3 id="error" class="error"></h3>
+            </div>
+            
+            <div>
+                <h3 id="INgresar">Ingresar el nota2</h3>
+            </div>
+            <div>
+                <input type="text" name="" id="txtNota2">
+                <h3 id="error" class="error"></h3>
+            </div>
+            
+            <div>
+                <h3 id="INgresar">Ingresar el nota3</h3>
+            </div>
+            <div>
+                <input type="text" name="" id="txtNota3">
+                <h3 id="error" class="error"></h3>
+            </div>
+            
+            <div>
+                <input id="btnCalcular"   class="estiloBoton" type="button" value="Calcular" onclick="calcular();">
+                <input id="btnGuardar" class="estiloBoton" type="button" value="Guardar" onclick="guardar();">
+            </div>
+            <div>
+                <h3>Suma</h3>
+                <h3 id="lblSuma">0</h3>
+                <h3>Promedio</h3>
+                <h3 id="lblPromedio">0</h3>
+            </div>
+            <div id="tablaEstudiantes">
+
+            </div>
+
+
+        </div>
+    </div>
+    <h5>creado por: Jonatha Cueva</h5>
+</body>
+</html>
